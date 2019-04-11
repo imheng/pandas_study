@@ -40,8 +40,3 @@ adsl_obj.groupby('支局_维护线')['用户标识'].agg([('ADSL','count')])
 #按支局进行汇总对用户标识进行计数,并将计数列的列名命名为ADSL
 使用pandas合并数据集(类似SQL中的JOIN):
 merge(mxj_obj2, mxj_obj1 ,on='用户标识',how='inner')# mxj_obj1和mxj_obj2将用户标识当成重叠列的键合并两个数据集,inner表示取两个数据集的交集.
---------------------- 
-作者：贪玩小神 
-来源：CSDN 
-原文：https://blog.csdn.net/q51522613/article/details/49404607 
-版权声明：本文为博主原创文章，转载请附上博文链接！
